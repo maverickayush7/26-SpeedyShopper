@@ -23,16 +23,16 @@ for i in range(num_requests):
     
     time.sleep(delay_seconds)
 
-#Webscraping raw unfiltered data from Blink It's Fruits and Vegetables section
-Blink_URL='https://blinkit.com/cn/fresh-vegetables/cid/1487/1489'
+#Webscraping raw unfiltered data from Dunzo's Fruits and Vegetables section
+DZ_URL='https://www.dunzo.com/bangalore/smart-final-banashankari-inner?subTag=fnv'
 
 for i in range(num_requests):
-    Blink_Response = requests.get(Blink_URL, headers=headers)
+    DZ_Response = requests.get(DZ_URL, headers=headers)
     
-    if Blink_Response.status_code != 200:
-        print(f'Request {i + 1} failed\n Error Code: {Blink_Response.status_code}')
+    if DZ_Response.status_code != 200:
+        print(f'Request {i + 1} failed\n Error Code: {DZ_Response.status_code}')
     else:
-        Blinkobj=Soup(Blink_Response.content)
-        print("\n\nBlink It Output:\n",Blinkobj)
+       DZobj=Soup(DZ_Response.content)
+       print("Dunzo's Output:\n",DZobj)
     
     time.sleep(delay_seconds)
