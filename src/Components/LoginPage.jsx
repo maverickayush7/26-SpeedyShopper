@@ -1,12 +1,24 @@
-import { useEffect, useState } from 'react';
-import './LoginPage.scss';
-import 'react-toastify/dist/ReactToastify.css';
-import { FcGoogle } from 'react-icons/fc';
-import validator from 'validator';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { login } from './../../redux/slice/userSlice';
-import { ToastContainer, toast } from 'react-toastify';
+import { Link } from "react-router-dom";
 
+<<<<<<< HEAD
+export default function LoginPage(){
+    return(
+        <div className="mt-6 grow flex items-center justify-around">
+            <div className="mb-16">
+                <h1 className="text-3xl text-center mb-4">Login</h1>
+                <form width="100px" height="100px">
+                    <input type="email" placeholder="Enter your email" />
+                    <input type="password" placeholder="Enter your Password" />
+                    <button className="primary">Login</button>
+                    <div className="text-center py-2 text-gray-600">Don't have an Account yet?
+                        <Link to={"/register"} className="underline text-black"> Join us now!</Link>
+                    </div>
+                </form>
+            </div>           
+        </div>
+    );
+}
+=======
 // auth
 // import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 // import { auth as authFire, provider } from './../../firebase';
@@ -14,7 +26,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const LoginPage = () => {
 	// const initialData = {
-	// 	email: '',
+	// 	email: ''
 	// 	password: '',
 	// };
 	// const auth = useSelector(state => state.user.user.auth);
@@ -164,3 +176,4 @@ const LoginPage = () => {
 };
 
 export default LoginPage
+>>>>>>> e8f2578961dff7f87290936e6b19a007193357f4
