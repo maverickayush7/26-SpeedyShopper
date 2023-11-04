@@ -14,7 +14,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const LoginPage = () => {
 	// const initialData = {
-	// 	email: '',
+	// 	email: ''
 	// 	password: '',
 	// };
 	// const auth = useSelector(state => state.user.user.auth);
