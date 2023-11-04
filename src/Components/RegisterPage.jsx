@@ -27,7 +27,8 @@ export default function RegisterPage(){
                         value={password}
                         onChange={ev=>setPassword(ev.target.value)}/>
 
-                    <button className="primary">Register</button>
+                    <button className="primary bg-slate-400 py-1 px-2 my-3 rounded-md">Register</button>
+                    <button className="primary bg-slate-400 py-1 px-2 rounded-md">Register with Google</button>
                     <div className="text-center py-2 text-gray-600">Already have an account?
                         <Link to={"/login"} className="underline text-black"> Go to login page</Link>
                     </div>
