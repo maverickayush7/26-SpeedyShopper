@@ -1,6 +1,6 @@
 import React from 'react'
-import "./cart.css";
-import { Card } from './Card_cart';
+import "./Cart.css";
+import { Card } from './Card';
 
 export default function Cart() {
   return (
