@@ -5,13 +5,13 @@ import { RxDotFilled } from 'react-icons/rx'
 const MainBanner = () => {
     const slides=[
         {
-          url:'https://images.unsplash.com/photo-1698254064280-8cf787405a39?auto=format&fit=crop&q=80&w=2075&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          url:'https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?auto=format&fit=crop&q=80&w=1932&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },
         {
-          url:'https://images.unsplash.com/photo-1698254064530-cb7206336da7?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8aG1lbnZRaFVteE18fGVufDB8fHx8fA%3D%3D'
+          url:'https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },
         {
-          url:'https://images.unsplash.com/photo-1698046474118-bdc0e474869c?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fGhtZW52UWhVbXhNfHxlbnwwfHx8fHw%3D'
+          url:'https://images.unsplash.com/photo-1576398289164-c48dc021b4e1?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         },];
     
     
@@ -34,7 +34,7 @@ const MainBanner = () => {
       }
     
         return (
-          <div id='main' className='max-w-[1400px] h-[700px] w-full mx-auto py-16 px-4 relative group'>
+          <div id='main' className='max-w-[1400px] h-[700px] w-full mx-auto py-20 px-4 relative group'>
             <div 
               style={{backgroundImage:`url(${slides[currentIndex].url})`}}
               className='w-full h-full rounded-2xl bg-center bg-cover duration-500'>
